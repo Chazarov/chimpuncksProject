@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Teachers';
+    background-color: #d4ff5f; /* Цвет фона страницы */
+}
+
+.page-wrapper {
+    display: flex;
+}
+
+/* Стиль бокового меню */
+.nav-item { 
+    color: white; 
+    text-decoration: none; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+.nav-item.active { 
+    color: #d4ff5f;  
+} 
+aside {
+  background-color: #7C57FC; /* Цвет фона бокового меню */
+  color: white;
+  width: 250px;
+  transition: width 0.3s; /*  Планая анимация изменения ширины */
+}
+
+/* .closed {
+  width: 0;
+  .menu-item{
+    display: none;
+    height:100%;
+  }
+} */
+
+/* .drawer-content {
+    padding: 20px;
+} */
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.drawer-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu-item i {
+  margin-right: 10px;
+}
+
+.teachers-font {
+  font-family: 'Teachers', sans-serif;
+}
+
+/* Стиль заголовка */
+header {
+    background-color: #673AB7; /* Цвет фона заголовка */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#menu-button {
+    font-size: 24px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.divider {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Стили кнопок */
+.expand-button {
+    background-color: #7C57FC; /* Цвет фона кнопки */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Стили полей ввода */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-row input {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стили блоков с контентом */
+.panel-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none; /* По умолчанию скрываем */
+}
+
+/* Стиль нижней навигационной панели */
+#navigation-bar {
+    background-color: #673AB7; /* Цвет фона навигации */
+    padding: 10px 0; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.nav-item { 
+    color: white; 
+    text-decoration: none; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+
+.nav-item.active { 
+    color: #d4ff5f;  
+} 
+
+.material-icons { 
+    font-size: 24px; 
+} 
+

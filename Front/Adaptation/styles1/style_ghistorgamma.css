@@ -1,0 +1,111 @@
+.vertical-histogram {
+    width: 400px;
+    height: 300px;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+  .vertical-histogram .bar {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+  }
+  
+  .vertical-histogram .bar-label {
+    margin-bottom: 5px;
+    font-size: 12px;
+    /* transform-origin: top left;
+    transform: rotate(90deg); */
+  }
+  
+  .vertical-histogram .bar-fill {
+    width: 100%;
+    border-radius: 5px;
+    background: linear-gradient(rgb(223, 70, 162),rgb(246,195,112));
+    animation: barddAnimation 1s forwards;
+}
+
+
+@keyframes barddAnimation {
+  from {height:0;}
+  to {transform: translateY(0);}
+}
+
+.horizontal-histogram {
+    width: 100%;
+    display: flex;
+    flex-direction: column;    animation: barddDDDDDAnimation 1s forwards;
+  }
+  
+.horizontal-histogram .bar {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  @keyframes barddDDDDDAnimation {
+    from {width:0;}
+    to {transform: translateY(0);}
+  }
+  
+  
+  .horizontal-histogram .bar-label {
+    white-space: nowrap; /* Текст не переносится */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis;
+    text-align: start;
+    text-align: right;
+    padding-right: 10px;
+  }
+  
+  .horizontal-histogram .bar-fill {
+    background: linear-gradient(rgb(70, 177, 223),rgb(166, 252, 252));
+    height: 50%;
+    border-radius: 5px;
+  }
+
+@keyframes barAnimation {
+  from {height:0;}
+  to {transform: translateY(0);}
+}
+
+/* @keyframes barAnimation 1s forwards{
+    from { height: 0; }
+    to { height: 100%; }
+  } */
+    /* animation: barAnimation 1s ease-in-out forwards;
+  }
+  
+  @keyframes barAnimation {
+    from { height: 0; }
+    to { height: 100%; } */
+  /* } */
+  
+.histogram_box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.blockckc{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+  @media (max-width: 500px){
+    .vertical-histogram {
+        width: 100%;
+      }
+  }

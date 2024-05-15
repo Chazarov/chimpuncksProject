@@ -1,0 +1,231 @@
+body {
+    font-family: 'Inter';
+    margin: 0;
+    background-color: #ffffff; /* Цвет фона страницы */
+}
+
+.page-wrapper {
+    display: flex;
+}
+h3{
+    text-align: center;
+  }
+.closed {
+  width: 0;
+  .drawer-menu{
+    .menu-item{
+        display: none;
+        height: 100%;
+    }
+  }
+  
+}
+
+.drawer-content {
+    padding: 20px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.drawer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.menu-item i {
+  margin-right: 10px;
+}
+
+.teachers-font {
+  font-family: 'Teachers', sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#menu-button {
+    font-size: 24px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.divider {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Стили кнопок *
+/* Стили полей ввода */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-row input {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стили блоков с контентом */
+.panel-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none; /* По умолчанию скрываем */
+}
+
+.nav-item { 
+    color: white; 
+    text-decoration: none; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+
+.nav-item.active { 
+    color: #d4ff5f;  
+} 
+
+.material-icons { 
+    font-size: 24px; 
+} 
+
+.container{
+    display: flex;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Fonts/Inter_Tight/InterTight-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#navigation-bar {
+    background-color: #348f7c; /* Цвет фона навигации */
+    padding: 10px 0; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-around; 
+}
+.expand-button {
+    background-color: #348f7c; /* Цвет фона кнопки */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-row input {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стили блоков с контентом */
+.panel-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: none; /* По умолчанию скрываем */
+}
+/* Для экранов шириной менее 600px */
+@media (max-width: 600px) {
+.form-row input,
+.expand-button {
+width: 100%; /* Занимает всю ширину контейнера */
+margin-bottom: 10px; /* Добавляет пространство снизу */
+}
+
+.form-row {
+flex-direction: column; /* Ставит элементы вертикально */
+}
+
+#navigation-bar {
+flex-direction: column; /* Ставит элементы навигации вертикально */
+padding: 5px 0; /* Уменьшает отступы */
+}
+
+.nav-item {
+margin-bottom: 10px; /* Добавляет пространство между элементами навигации */
+}
+
+/* Скрываем только верхнюю навигационную панель и боковую панель */
+.top_navbar,
+.sidebar {
+display: none;
+}
+
+/* Адаптируем заголовок и основное содержимое */
+.header-container,
+#content {
+padding: 0 10px; /* Добавляем отступы */
+}
+
+.header-container {
+justify-content: center; /* Центрируем заголовок */
+}
+
+/* Показываем основное содержимое */
+.panel-content {
+display: block; /* По умолчанию показываем */
+}
+.expand-button {
+background-color: #348f7c; /* Цвет фона кнопки */
+color: white;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+margin-bottom: 10px;
+width: 100%;
+}
+}

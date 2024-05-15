@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(rgb(223, 70, 162),rgb(246,195,112));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(#282c34,#6d6d6d);
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.form-group input {
+  width: 210px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #282c34;
+  color: #ffffff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #d4ff5f;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Teachers', sans-serif;
+}
+
+#register-button {
+  background-color: #d4ff5f;
+  color: #282c34;
+}
+
+#register-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tonal-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.image-container {
+  text-align: center;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преподаватели</title>
+    <link rel="stylesheet" href="styles/adaptation/adaptation.css">
+    <link rel="stylesheet" href="styles/style_task_main.css">
+    <link rel="stylesheet" href="styles/style_teachers_copy.css">
+    <link rel="stylesheet" href="styles/style_breadcrumb.css">
+    <link rel="stylesheet" href="styles/style_sidebar.css">
+    <!-- <link rel="stylesheet" href="styles/style_ghistorgamma.css"> -->
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="logo_title">
+                    <div class="hamburger">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <img src="images/logo.svg">
+                    <h1>Сайт</h1>
+                </div>
+                <div class="buttons">
+                    <button class="button filled-button" id="vhod">Войти</button>
+                    <button class="button outlined-button">Регистрация</button>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="images/student.png" alt="profile_picture">
+                    <h3>Александр Дегтярев</h3>
+                    <p>Студент</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="teachers.html">
+                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                            <span class="item">Преподаватели</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="task_list.html">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">Мои задачи</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ghistorgamma.html" class="active">
+                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                            <span class="item">Оценки</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="settings">
+                            <span class="icon"><i class="fas fa-cog"></i></span>
+                            <span class="item">Настройки</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <div id="content" class="content">
+                    <ul class="breadcrumb">
+                        <li><a href="teachers.html">Преподаватели</a></li>
+                        <li><a href="task_list.html">Файфель Борис Леонидович</a></li>
+                        <li>Простые числа</li>
+                    </ul>
+                    <section class="task_description">
+                        <h2 class="task-title">Задача №3608. Простые числа</h2>
+                        <div class="task-buttons">
+                            <button class="button outlined-button">Задать вопрос преподавателю</button>
+                        </div>
+                    </section>
+                    <p class="task-description">На плоскости задано n точек с координатами x и y, вводимыми с клавиатуры
+                        в двумерный массив. Найти:
+                        <br>1) Пары точек с максимальным расстоянием.
+                        <br>2) Тройки точек, составляющие треугольник наибольшей площади.
+                        <br>3) Четверки точек, составляющие квадрат наибольшей площади. Также проверить, являются ли эти
+                        точки квадратом.
+                    </p>
+                    <h4>Доп. файлы:</h4>
+                    <select id="menu" name="menu" class="button outlined-button">
+                        <option value="IFST">Координаты</option>
+                        <option value="IVCT">Лекция</option>
+                        <option value="IVCT">Текст</option>
+                    </select>
+                    <button class="button filled-button">Скачать</button>
+                    <br>
+                    <br>
+
+                    <p class="task-example">Решение</p>
+                    <textarea name="comment" class="text_field" cols="80" rows="5"></textarea></p>
+                    <div class="task_button">
+                        <button class="button outlined-button">Прикрепить файл</button>
+                        <select id="menu" name="menu" class="button outlined-button">
+                            <option value="IFST">Java</option>
+                            <option value="IVCT">FreeBASIC</option>
+                            <option value="IVCT">Ruby</option>
+                            <option value="IVCT">C</option>
+                            <option value="IVCT">C++</option>
+                            <option value="IVCT">PHP</option>
+                            <option value="IVCT">Python</option>
+                        </select>
+                        <input class="button filled-button" type="submit">
+                        <button class="button filled-button">Обновить</button>
+                    </div>
+
+                    <table id="myTable">
+                        <tr class="header">
+                            <th>Файл</th>
+                            <th>Дата</th>
+                            <th>Статус</th>
+                            <th>Пройдено тестов</th>
+                            <th>Оценка</th>
+                        </tr>
+                        <tr>
+                            <td><button class="icon-button"><i class='fas fa-file'></i> Python.py</button></td>
+                            <td><a href="task.html">18.03.24</a></td>
+                            <td class="opisanie">Проверено</td>
+                            <td>18/24</td>
+                            <td><button class="button filled-button">5</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="icon-button"><i class='fas fa-file'></i> Python.py</button></td>
+                            <td><a href="task.html">18.03.24</a></td>
+                            <td class="opisanie">Проверено</td>
+                            <td>18/24</td>
+                            <td><button class="button filled-button">5</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="icon-button"><i class='fas fa-file'></i> Python.py</button></td>
+                            <td><a href="task.html">18.03.24</a></td>
+                            <td class="opisanie">Проверено</td>
+                            <td>18/24</td>
+                            <td><button class="button filled-button">4</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="icon-button"><i class='fas fa-file'></i> Python.py</button></td>
+                            <td><a href="task.html">18.03.24</a></td>
+                            <td class="opisanie">Проверено</td>
+                            <td>18/24</td>
+                            <td><button class="button filled-button">5</button></td>
+                        </tr>
+                    </table>
+
+                    <!-- <table class="data-table">
+                        <thead>
+                            <tr id="top_tr">
+                                <th>Файл</th>
+                                <th>Дата</th>
+                                <th>Статус</th>
+                                <th>Пройдено тестов</th>
+                                <th>Оценка</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><button class="icon-button"><i class='fas fa-file'></i> Python.py</button></td>
+                                <td>18.03.2024</td>
+                                <td><button class="icon-button">Проверено</button></td>
+                                <td>18/24</td>
+                                <td><button class="icon-button"><i class="material-icons">5</i></button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="icon-button"><i class="fas fa-file"></i> Python.py</button></td>
+                                <td>18.03.2024</td>
+                                <td><button class="icon-button">Проверено</button></td>
+                                <td>18/24</td>
+                                <td><button class="icon-button"><i class="material-icons">5</i></button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="icon-button"><i class="fas fa-file"></i> Python.py</button></td>
+                                <td>18.03.2024</td>
+                                <td><button class="icon-button">Проверено</button></td>
+                                <td>18/24</td>
+                                <td><button class="icon-button"><i class="material-icons">5</i></button></td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+
+        const block = document.querySelector('.sidebar');
+        const toggleButton = document.querySelector('.hamburger');
+        const sdvig = document.querySelector('.logo_title');
+
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function () {
+            document.querySelector("body").classList.toggle("active");
+        })
+
+        toggleButton.addEventListener('click', function () {
+            if (block.style.display === 'none') {
+                block.style.display = 'block';
+                sdvig.style.width = 'none';
+                sdvig.style.marginLeft = 'none';
+            } else {
+                block.style.display = 'none';
+            }
+        });
+
+        // Для изменения стилей при разрешении 710px
+        window.addEventListener('resize', function () {
+            if (window.innerWidth <= 710) {
+                sdvig.style.width = 'none';
+                sdvig.style.marginLeft = 'none';
+            } else {
+                sdvig.style.width = 'initial';
+                sdvig.style.marginLeft = 'initial';
+            }
+        });
+    </script>
+    <script src="scripts/scripts_search.js"></script>
+</body>
+
+</html>

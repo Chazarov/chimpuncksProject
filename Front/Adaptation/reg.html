@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      src: url('Fonts/Inter_Tight/InterTight-SemiBold.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    /* Применение шрифта Inter ко всем элементам label */
+    label {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .container{
+      background-image: url(images/devochka.png);
+      background-repeat: no-repeat;
+      background-size: 400px;
+      height: 500px;
+      background-position:right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="content">
+    <div class="registration-form">
+      <h1 style="color: #e1e0e0; font-family: 'Teachers', sans-serif; font-size: 25px;">Регистрация</h1>
+      <div class="form-group">
+        <label for="login">Логин:</label>
+        <input type="text" id="login" name="login" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button id="register-button" disabled>Добавить</button>
+      <div class="button-group">
+        <button class="tonal-button">Студент</button>
+        <button class="tonal-button">Препод</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const loginInput = document.getElementById('login');
+    const passwordInput = document.getElementById('password');
+    const registerButton = document.getElementById('register-button');
+
+    function validateForm() {
+      if (loginInput.value && passwordInput.value) {
+        registerButton.disabled = false;
+      } else {
+        registerButton.disabled = true;
+      }
+    }
+
+    loginInput.addEventListener('input', validateForm);
+    passwordInput.addEventListener('input', validateForm);
+
+    // Обработчик для кнопки "Добавить" (логика регистрации - здесь нужно добавить взаимодействие с сервером)
+    registerButton.addEventListener('click', () => {
+      // Логика регистрации (взаимодействие с сервером)
+
+      // Очистить поля и изменить текст кнопки после регистрации
+      loginInput.value = '';
+      passwordInput.value = '';
+      registerButton.textContent = 'Добавлено';
+    });
+  </script>
+</body>
+</html>
+
+

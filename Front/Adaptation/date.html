@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преподаватели</title>    
+    <link rel="stylesheet" href="styles/adaptation/adaptation.css">
+    <link rel="stylesheet" href="styles/style_sidebar.css">
+    <link rel="stylesheet" href="styles/style_teachers.css">
+    <link rel="stylesheet" href="styles/styles_1.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="logo_title">
+                    <div class="hamburger">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <img src="images/logo.svg">
+                    <h1>Сайт</h1>
+                </div>
+                <div class="buttons">
+                    <button class="button filled-button" id="vhod">Войти</button>
+                    <button class="button outlined-button">Регистрация</button>
+                </div>
+            </div>
+        
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="images/student.png" alt="profile_picture">
+                    <h3>Александр Дегтярев</h3>
+                    <p>Студент</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="teachers.html">
+                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                            <span class="item">Преподаватели</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="task_list.html">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">Мои задачи</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ghistorgamma.html" class="active">
+                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                            <span class="item">Оценки</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="settings">
+                            <span class="icon"><i class="fas fa-cog"></i></span>
+                            <span class="item">Настройки</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <main>
+                <header>
+                    <div class="header-container" id="content">
+                        <button id="menu-button">&#9776;</button>
+                        <h3>Эти данные определяют твою роль на платформе. Важно указывать актуальную информацию.</h3>
+                    </div>
+                    <hr class="divider">
+                </header>
+                <div id="content">
+                    <button id="toggle-personal-data" class="expand-button">Персональные данные</button>
+                    <div id="personal-data-content" class="panel-content" style="display: none;">
+                        <div class="form-row">
+                            <input type="text" id="user_sur" placeholder="Фамилия">
+                            <input type="text" id="user_name" placeholder="Имя">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" id="user_ot" placeholder="Отчество">
+                            <input type="text" id="user_nick" placeholder="Никнейм">
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" id="user_num" placeholder="Номер телефона">
+                            <input type="date" id="user_data" placeholder="Дата Рождения">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" id="user_citizen" placeholder="Гражданство">
+                            <input type="text" id="user_town" placeholder="Город проживания">
+                        </div>
+                    </div>
+                
+                    <button id="toggle-education" class="expand-button">Образование</button>
+                    <div id="education-content" class="panel-content" style="display: none;">
+                        <div class="form-row">
+                            <label for="city">Статус на платформе</label>
+                            <select id="city" name="city">
+                                <option value="moscow">Студент</option>
+                                <option value="spb">Преподаватель</option>
+                            </select>
+                            <label for="inpit">Направление</label>
+                            <select id="inpit" name="inpit">
+                                <option value="IFST">ИФСТ</option>
+                                <option value="IVCT">ИВЧТ</option>
+                                <option value="PINZ">ПИНЖ</option>
+                                <option value="PINF">ПИНФ</option>
+                                <option value="TLVD">ТЛВД</option>
+                                <option value="DIZN">ДИЗН</option>
+                                <option value="RKLM">РКЛМ</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="num">Номер группы</label>
+                            <select id="num" name="num">
+                                <option value="one">11</option>
+                                <option value="two">12</option>
+                                <option value="three">13</option>
+                                <option value="four">14</option>
+                                <option value="five">15</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                  <div class="profile">
+                      <img src="images/student.png" alt="profile_picture">
+                      <h3>Александр Дегтярев</h3>
+                      <p>Студент</p>
+                  </div>
+                  <ul>
+                      <li>
+                          <a href="#" class="active">
+                              <span class="icon"><i class="fas fa-user-friends"></i></span>
+                              <span class="item">Преподаватели</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <span class="icon"><i class="fas fa-desktop"></i></span>
+                              <span class="item">Мои задачи</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <span class="icon"><i class="fas fa-user-friends"></i></span>
+                              <span class="item">Оценки</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#" id="settings">
+                              <span class="icon"><i class="fas fa-cog"></i></span>
+                              <span class="item">Настройки</span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+        
+          </div>
+                
+                <nav id="navigation-bar">
+                  <a href="#" class="nav-item active" data-index="0">
+                    <i class="material-icons">person</i>
+                    <span>Основные данные</span>
+                  </a>
+                  <a href="date2.html" class="nav-item" data-index="2">
+                    <i class="material-icons">lock</i>
+                    <span>Безопасность</span>
+                  </a>
+                </nav>
+            </main>
+          </div>
+        </div>
+
+
+    </div>
+    <script>
+
+        const block = document.querySelector('.sidebar');
+        const toggleButton = document.querySelector('.hamburger');
+        const sdvig = document.querySelector('.logo_title');
+        
+        var hamburger = document.querySelector(".hamburger");
+                hamburger.addEventListener("click", function () {
+                    document.querySelector("body").classList.toggle("active");
+                })
+        
+        toggleButton.addEventListener('click', function() {
+          if (block.style.display === 'none') {
+            block.style.display = 'block';
+            sdvig.style.width = 'none';
+            sdvig.style.marginLeft = 'none';
+          } else {
+            block.style.display = 'none';
+          }
+        });
+        
+        // Для изменения стилей при разрешении 710px
+        window.addEventListener('resize', function() {
+          if (window.innerWidth <= 710) {
+            sdvig.style.width = 'none';
+            sdvig.style.marginLeft = 'none';
+          } else {
+            sdvig.style.width = 'initial';
+            sdvig.style.marginLeft = 'initial';
+          }
+        });
+            </script>
+    <script>
+      const menuButton = document.getElementById('menu-button');
+      const navigationDrawer = document.getElementById('navigation-drawer');
+      const togglePersonalDataButton = document.getElementById('toggle-personal-data');
+      const personalDataContent = document.getElementById('personal-data-content');
+      const toggleEducationButton = document.getElementById('toggle-education');
+      const educationContent = document.getElementById('education-content');
+      
+      menuButton.addEventListener('click', () => {
+        navigationDrawer.classList.toggle('closed');
+      });
+      
+      togglePersonalDataButton.addEventListener('click', () => {
+        personalDataContent.style.display = personalDataContent.style.display === 'none' ? 'block' : 'none';
+      });
+      
+      toggleEducationButton.addEventListener('click', () => {
+        educationContent.style.display = educationContent.style.display === 'none' ? 'block' : 'none';
+      });
+      
+      const navItems = document.querySelectorAll('.nav-item');
+      navItems.forEach(item => {
+          item.addEventListener('click', (event) => {
+              // Удаляем класс 'active' у всех элементов
+              navItems.forEach(navItem => navItem.classList.remove('active'));
+      
+              // Добавляем класс 'active' к выбранному элементу
+              event.target.classList.add('active');
+      
+              // Получаем индекс выбранной секции
+              const selectedIndex = event.target.getAttribute('data-index');
+      
+              // Здесь нужно добавить логику загрузки контента 
+              // в зависимости от selectedIndex
+              console.log("Выбрана секция:", selectedIndex);
+          });
+      });
+      const citySelect = document.getElementById('city');
+      
+      citySelect.addEventListener('change', (event) => {
+        const selectedCity = event.target.value;
+        console.log('Выбран город:', selectedCity);
+        // Добавьте здесь свою логику
+      });
+    </script>
+</body>
+
+</html>

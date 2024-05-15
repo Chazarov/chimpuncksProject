@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преподаватели</title>    
+    <link rel="stylesheet" href="styles/adaptation/adaptation.css">
+    <link rel="stylesheet" href="styles/style_sidebar.css">
+    <link rel="stylesheet" href="styles/style_teachers.css">
+    <link rel="stylesheet" href="styles/styles_1.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="logo_title">
+                    <div class="hamburger">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <img src="images/logo.svg">
+                    <h1>Сайт</h1>
+                </div>
+                <div class="buttons">
+                    <button class="button filled-button" id="vhod">Войти</button>
+                    <button class="button outlined-button">Регистрация</button>
+                </div>
+            </div>
+        
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="images/student.png" alt="profile_picture">
+                    <h3>Александр Дегтярев</h3>
+                    <p>Студент</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#" class="active">
+                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                            <span class="item">Преподаватели</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-desktop"></i></span>
+                            <span class="item">Мои задачи</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-user-friends"></i></span>
+                            <span class="item">Оценки</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="settings">
+                            <span class="icon"><i class="fas fa-cog"></i></span>
+                            <span class="item">Настройки</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <main>
+                <div class="container">
+                    <div id="content">
+                        <h1 style="font-family: 'Inter'; color: #000000; font-size: 100px; font-weight: bold;">Здравствуй, Учитель!</h1>
+                        <h3 style="font-family: 'Inter'; color: #000000; font-size: 24px;">Добро пожаловать в Институт
+                            Прикладных Технологий и Коммуникаций!</p>
+                        <h3 style="font-family: 'Inter'; color: #000000; font-size: 24px;">Проверьте информацию о себе!</p>
+
+                        <div class="dropdown">
+                            <label for="menu"
+                                style="font-family: 'Inter'; color: #000000; font-size: 20px; font-weight: bold;">Меню</label>
+                            <select id="menu" name="menu">
+                                <option value="IFST">Личные данные</option>
+                                <option value="IVCT">Загруженные задачи</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/devochka.png" alt="Девушка">
+                    </div>
+                </div>
+            </main>
+        </div>
+
+
+    </div>
+    <script>
+
+const block = document.querySelector('.sidebar');
+const toggleButton = document.querySelector('.hamburger');
+const sdvig = document.querySelector('.logo_title');
+
+var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function () {
+            document.querySelector("body").classList.toggle("active");
+        })
+
+toggleButton.addEventListener('click', function() {
+  if (block.style.display === 'none') {
+    block.style.display = 'block';
+    sdvig.style.width = 'none';
+    sdvig.style.marginLeft = 'none';
+  } else {
+    block.style.display = 'none';
+  }
+});
+
+// Для изменения стилей при разрешении 710px
+window.addEventListener('resize', function() {
+  if (window.innerWidth <= 710) {
+    sdvig.style.width = 'none';
+    sdvig.style.marginLeft = 'none';
+  } else {
+    sdvig.style.width = 'initial';
+    sdvig.style.marginLeft = 'initial';
+  }
+});
+    </script>
+    <script src="scripts/scripts_search.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
