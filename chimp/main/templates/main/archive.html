@@ -1,0 +1,40 @@
+{% extends "main/BASE.html"%}
+{% load static%}
+{%block css_add%}
+<link rel="stylesheet" href="{% static 'styles/adaptation/adaptation.css' %}">
+<link rel="stylesheet" href="{% static 'styles/style_sidebar.css' %}">
+<link rel="stylesheet" href="{% static 'styles/style_teachers.css' %}">
+<link rel="stylesheet" href="{% static 'styles/style_breadcrumb.css' %}">
+{%endblock%}
+    {%block container%}
+        <h1>Список преподавателей</h1>
+
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Поиск по ФИО" title="Введите имя">
+
+        <table id="myTable">
+            <tr class="header">
+                <th>ФИО</th>
+            </tr>
+            <tr>
+                <td>Гусятников Виктор Николаевич</td>
+            </tr>
+            <tr>
+                <td>Пиминов Дмитрий Алексеевич</td>
+            </tr>
+            <tr>
+                <td><a href="/">Файфель Борис Леонидович</a></td>
+            </tr>
+            <tr>
+                <td>Акутин Артем Сергеевич</td>
+            </tr>
+            <tr>
+                <td>Ермаков Александр Вадимович</td>
+            </tr>
+            <tr>
+                <td>Попрыга Екатерина Александровна</td>
+            </tr>
+            <tr>
+                <td>Торопова Ольга Анатольевна</td>
+            </tr>
+        </table>
+{%endblock%}

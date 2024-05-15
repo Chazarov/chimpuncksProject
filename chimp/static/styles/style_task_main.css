@@ -1,0 +1,98 @@
+/* body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .header {
+    background-color: #BBDEFB;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+  }
+   */
+  .title {
+    font-size: 25px;
+  }
+  
+  .buttons {
+    display: flex;
+  }
+  
+  .container .button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .container .filled-button {
+    background-color: #2196F3; 
+    color: white;
+  }
+  
+  .container .outlined-button {
+    background-color: transparent;
+    color: #2196F3;
+    border: 1px solid #2196F3;
+  }
+  
+  .task-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .task-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .task-example {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .task_button{
+    padding-top: 10px;
+  }
+  
+  .data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .data-table th, .data-table td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .data-table tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .task_description{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .text_field{
+      max-width: 100%;
+  }

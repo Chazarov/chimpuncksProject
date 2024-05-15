@@ -1,0 +1,22 @@
+{% extends "main/BASE.html" %}
+
+{% load static %}
+
+{% block css_add %}
+<link rel="stylesheet" href="{% static 'styles/style_sidebar.css' %}">
+{% endblock %}
+
+{%block container%}
+    <form method="POST">
+        {% csrf_token %}
+
+        {{ form.login }}<br>
+        {{ form.pasw }}<br>
+        {{ form.code }}<br>
+        {{ form.user_type }}<br>
+
+
+        <button type="submit">SEND</button>
+        <span>{{ error }}</span>
+    </form>
+{% endblock %}

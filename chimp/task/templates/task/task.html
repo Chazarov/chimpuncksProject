@@ -1,0 +1,92 @@
+{% extends "main/BASE.html" %}
+
+{% load static %}
+
+    {% block css_add %}
+        <link rel="stylesheet" href="{% static 'styles/adaptation/adaptation.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/style_task_main.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/style_teachers_copy.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/style_breadcrumb.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/style_sidebar.css' %}">
+    {% endblock %}
+    
+                {%block container%}
+                    <div id="content" class="content">
+                    <ul class="breadcrumb">
+                        <li><a href="teachers.html">Преподаватели</a></li>
+                        <li><a href="task_list.html">Файфель Борис Леонидович</a></li>
+                        <li>Простые числа</li>
+                    </ul>
+                    <section class="task_description">
+                        <h2 class="task-title">Задача №3608. Простые числа</h2>
+                        <div class="task-buttons">
+                            <button class="button outlined-button">Задать вопрос преподавателю</button>
+                        </div>
+                    </section>
+                    <p class="task-description"> Напиште функцию - сумматор "choise(a, b) -> int" которая имеет два входных численных параметра и возвращает их сумму
+                    </p>
+                    <h4>Доп. файлы:</h4>
+                    <select id="menu" name="menu" class="button outlined-button">
+                        <option value="IFST">Координаты</option>
+                        <option value="IVCT">Лекция</option>
+                        <option value="IVCT">Текст</option>
+                    </select>
+                    <button class="button filled-button">Скачать</button>
+                    <br>
+                    <br>
+
+                    <p class="task-example">Решение</p>
+                    <form method="post">
+                        {% csrf_token %}
+                        {{form.resolve}}
+                        
+                        {{form.user_id}}
+                        {{form.task_id}}
+                        {{form.decision_status}}
+                        {{form.resolve_date}}
+                        {{form.resolve_language}}
+                        <div class="task_button">
+                        <button class="button outlined-button">Прикрепить файл</button>
+                        <select id="menu" name="menu" class="button outlined-button">
+                            <option value="IFST">Java</option>
+                            <option value="IVCT">FreeBASIC</option>
+                            <option value="IVCT">Ruby</option>
+                            <option value="IVCT">C</option>
+                            <option value="IVCT">C++</option>
+                            <option value="IVCT">PHP</option>
+                            <option value="IVCT">Python</option>
+                        </select>
+                        <input class="button filled-button" type="submit">
+                        <button class="button filled-button">Обновить</button>
+                        <span>{{error}}</span>
+                    </div>
+                </form>
+
+                    <table id="myTable">
+                        <tr class="header">
+                            <th>Файл</th>
+                            <th>Дата</th>
+                            <th>Статус</th>
+                            <th>Пройдено тестов</th>
+                            <th>Оценка</th>
+                        </tr>
+                        <tr>
+                            {%if solves%}
+                                {% for el in solves%}
+                                    <tr>
+                                        <td><button class="icon-button"><i class="fas fa-file"></i> {{solves.language}}</button></td>
+                                        <td>{{el.resolve_date}}</td>
+                                        <td>Проверено</td>
+                                        <td><button class="icon-button">10/10</button></td>
+                                        <td>{{el.decision_status}}</td>
+                                    </tr>
+                                {%endfor%}
+                            {%else%}
+                                <tr>
+                                    <td>Решений пока нет</td>
+                                </tr>
+                            {% endif%}
+                        </tr>
+                    </table>
+                </div>
+                {% endblock %}

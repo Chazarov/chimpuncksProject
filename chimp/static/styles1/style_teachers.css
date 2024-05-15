@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #myInput {
+    /* background-image: url('../css/searchicon.png'); */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  
+  #myTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+    width: clamp(240px,67.4vw,1056px);
+    padding: 10px;
+  }
+
+  /* #myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  #myTable tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+  } */
+
+  #myInput td{
+    font-size: 1vw;
+  }
+
+  .container h1{
+    margin-bottom: 15px;
+  }
+
+  .buttons {
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+    min-width: 150px;
+  }
+  
+  .container .button {
+    /* margin: 20px; */
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .container .filled-button {
+    background-color: #2196F3; 
+    color: white;
+    width: 70px;
+    margin-left: 20px;
+  }
+  
+  .container .outlined-button {
+    background-color: transparent;
+    color: #2196F3;
+    width: 100px;
+    border: 1px solid #2196F3;
+  }
+
+#fio, #deistvia{
+  width: 5vw;
+}
+
+.header th{
+  padding: 10px 0 10px 0;
+}
+
+#myTable td{
+  padding: 5px 0 5px 0;
+  margin-left: 20px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  min-height: 100%;
+}
+
+#myTable{
+  font-size: clamp(10px,1.4vw,30px);
+}
+
+.ycheniki ol {
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: 'Gardens';
+  color: rgba(147, 147, 147, 0.769);
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+  background-color: #53535317;
+}
+
+.winer li {
+  font-size: clamp(12px,3.8vw,50px);
+  color: rgb(255, 255, 0);
+  text-shadow: 0 0 3px black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.317);
+  margin-bottom: 10px;
+}
+ol li {
+  font-size: clamp(15px,3vw,30px);
+  padding-bottom: 10px;
+}
+
+/* /////////////////////////////////////////// */
+
+  @media(max-width: 710px){
+    .wrapper .sidebar{
+        width: 100%;
+        max-width: calc(100% - 40px);
+        min-width: 300px;
+        height: 400px;
+        margin: 20px;
+        position: relative;
+        margin: 0 auto;
+        display: none;
+        animation: slideIn 1s forwards;
+      }
+      
+      @keyframes slideIn {
+        from {
+          transform: translateX(-5%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      .horizontal-histogram{
+        margin: 20px 0 20px 0;
+        
+      }
+
+      .ycheniki ol{
+        margin-top: 20px;
+        width: 250px;
+      }
+
+    .wrapper .section{
+      margin-left: 0px;
+      width: 100%;
+      max-width: 710px;
+    }
+}
+
+
+
+
+@media(max-width: 482px){
+  .wrapper .section .top_navbar{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .buttons{
+    margin-top: 20px;
+  }
+
+  .logo_title{
+    padding-left: 0px;
+  }
+}
+
+@media(max-width:469px){
+  .horizontal-histogram .bar{
+    flex-direction: column;
+    
+  }
+}

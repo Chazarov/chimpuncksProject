@@ -1,0 +1,36 @@
+{% extends "main/BASE.html" %}
+
+{% load static %}
+
+{% block css_add %}
+        <link rel="stylesheet" href="{% static 'styles/adaptation/adaptation.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/style_task_main.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/style_teachers_copy.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/style_breadcrumb.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/style_sidebar.css' %}">
+{% endblock %}
+
+{%block container%}
+    <div id="content" class="container content">
+                <ul class="breadcrumb">
+                    <li><a href="teachers.html">Личный кабинет</a></li>
+                    <li>Добавить задачу</li>
+                </ul>
+                <div class="create_task">
+                    <div class="section1">
+                        <span class="label">Название задачи</span>
+                        <input type="text" class="field" placeholder="Введите название">
+                    </div>
+                    <div class="section1">
+                        <span class="label">Описание</span>
+                        <textarea name="comment" class="field" placeholder="Введите условие"></textarea>
+                    </div>
+                    <div class="section1">
+                        <span class="label">Название задачи</span>
+                        <input type="text" class="field" placeholder="Введите имя">
+                    </div>
+                </div>
+            </div>
+{%endblock%}
+            
+        

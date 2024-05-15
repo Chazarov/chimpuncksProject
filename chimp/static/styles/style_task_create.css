@@ -1,0 +1,33 @@
+.create_task{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+span .label{
+    min-width: 70px;
+    width: 10%;
+}
+
+.field{
+    width: 80%;
+    min-width: 300px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.section1{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 150px; 
+    resize: vertical; /* Разрешить изменение размера только по вертикали */
+    border: 1px solid #ccc;
+}

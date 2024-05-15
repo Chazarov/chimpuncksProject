@@ -1,0 +1,79 @@
+{% extends "main/BASE.html" %}
+{% load static%}
+    {% block css_add %}
+        
+        <link rel="stylesheet" href="{% static 'styles/style_sidebar.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/style_teachers.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/style_breadcrumb.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/adaptation/adaptation.css' %}">
+    {% endblock %}
+
+{%block container%}
+<ul class="breadcrumb">
+    <li><a href="teachers.html">Преподаватели</a></li>
+    <li>Файфель Борис Леонидович</li>
+</ul>
+<h1>Задачи</h1>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Поиск по названию"
+    title="Введите имя">
+
+<table id="myTable">
+    <tr class="header">
+        <th>№</th>
+        <th>Название</th>
+        <th>Описание</th>
+        <th>Дата</th>
+        <th>Результат</th>
+    </tr>
+    <tr>
+        <td>1.</td>
+        <td><a href="task.html">Простые числа</a></td>
+        <td class="opisanie">Дан массив простых чисел...</td>
+        <td>18.03.2024</td>
+        <td><button class="button filled-button">Проверено</button></td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td><a href="task.html">Простые числа</a></td>
+        <td class="opisanie">Дан массив простых чисел...</td>
+        <td>18.03.2024</td>
+        <td><button class="button filled-button">Проверено</button></td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td><a href="task.html">Простые числа</a></td>
+        <td class="opisanie">Дан массив простых чисел...</td>
+        <td>18.03.2024</td>
+        <td><button class="button filled-button">Проверено</button></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td><a href="task.html">Простые числа</a></td>
+        <td class="opisanie">Дан массив простых чисел...</td>
+        <td>18.03.2024</td>
+        <td><button class="button filled-button">Проверено</button></td>
+    </tr>
+    <tr>
+        <td>5.</td>
+        <td><a href="task.html">Простые числа</a></td>
+        <td class="opisanie">Дан массив простых чисел...</td>
+        <td>18.03.2024</td>
+        <td><button class="button filled-button">Проверено</button></td>
+    </tr>
+    <tr>
+        <td>6.</td>
+        <td><a href="task.html">Простые числа</a></td>
+        <td class="opisanie">Дан массив простых чисел...</td>
+        <td>18.03.2024</td>
+        <td><button class="button filled-button">Проверено</button></td>
+    </tr>
+    <tr>
+        <td>7.</td>
+        <td><a href="task.html">Простые числа</a></td>
+        <td class="opisanie">Дан массив простых чисел...</td>
+        <td>18.03.2024</td>
+        <td><button class="button filled-button">Проверено</button></td>
+    </tr>
+</table>
+{%endblock%}
